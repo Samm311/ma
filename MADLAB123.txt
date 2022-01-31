@@ -1,0 +1,109 @@
+20)A=[-1 1 1;-0.2,0.5 0.2;-0.3 0.3 0.4];
+   B=[500;250;250];
+   X=inv(A)*B;
+   F1=X(1),F3=X(2),F4=X(3)
+
+19)A=[1 1 1;0.04 0.54 0.26;0.93 0.24 0];
+B=[10;2;6];
+X=inv(A)*B;
+F1=X(1),F2=X(2),F3=X(3)
+
+11)for i=1:11
+for k=11:-1:j
+fprintf(' ');
+end
+for j=1:i
+fprintf(' ');
+fprintf('%d', factorial(j));
+end
+fprintf('\n');
+end
+12)#lcd and gcd programme
+x=input('enter the first number:');
+y=input('enter the second number:');
+for i=1:y
+if((rem(x,i)==0 && (rem(y,i)==0)))
+c=i;
+end
+end
+disp('GCD:');
+disp(c);
+z=x*y/c;
+disp('LCD :');
+disp(z);
+q)
+5 
+0 5 
+5 0 5 
+0 5 0 5 
+5 0 5 0 5 
+for i=1:5
+for j=1:i
+if (rem(i+j,2)==0||i==j)
+fprintf('5');
+else
+fprintf('0');
+end
+fprintf(' ')
+end
+fprintf('\n')
+end
+q)
+      5
+     0 5 
+    5 0 5 
+   0 5 0 5 
+  5 0 5 0 5 
+for i=1:5
+for k=5:-1:j
+fprintf(' ')
+end
+for j=1:i
+if (rem(i+j,2)==0||i==j)
+fprintf('5');
+else
+fprintf('0');
+end
+fprintf(' ')
+end
+fprintf('\n')
+end
+       -1  
+      X  Y  
+     -1  -2  -3  
+    W  X  Y  Z  
+   -1  -2  -3  -4  -5  
+  U  V  W  X  Y  Z  
+ans   for i=1:6
+for k=6:-1:j
+fprintf(' ');
+end
+for j=1:i
+if (rem(i,2)!=0)
+fprintf('%d',-j);
+elseif(i==2)
+fprintf('%s',87+j);
+elseif(i==4)
+fprintf('%s',86+j);
+else
+fprintf('%s',84+j);
+end
+fprintf('  ');
+end
+fprintf('\n');
+end
+1) rev of number
+x=input('en')
+temp=x;
+rev=0;
+while (temp>=1)                   
+a=rem(temp,10);
+rev=rev*10+a;
+temp=floor(temp/10);
+end
+fprintf('%d\n',rev)
+or 
+
+
+        as=1245678;
+c=str2num(fliplr(num2str(as)))
